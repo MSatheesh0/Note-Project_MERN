@@ -1,0 +1,8 @@
+jsB3ArtB6CZ7taH8
+
+satheesh2005satheesh_db_user
+
+mongosh "mongodb+srv://cluster0.vp16vyj.mongodb.net/" --apiVersion 1 satheesh2005satheesh_db_user jsB3ArtB6CZ7taH8
+
+
+mongodb+srv://satheesh2005satheesh_db_user:jsB3ArtB6CZ7taH8@cluster0.vp16vyj.mongodb.net/?appName=Cluster0
