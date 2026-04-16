@@ -23,7 +23,7 @@ export const Create = () => {
 
     setloading(false);
     try{
-      await axios.post("http://localhost:3000/api/node",{
+      await axios.post("/api/node",{
         title,content,
       });
       toast.success("Note Created Scuccessfully");
