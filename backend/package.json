@@ -5,7 +5,7 @@
   "main": "src/server.js",
  "scripts": {
   "dev": "nodemon src/server.cjs",
-  "start": "nodemon src/server.cjs"
+  "start": "node src/server.cjs"
 },
   "keywords": [],
   "author": "",
