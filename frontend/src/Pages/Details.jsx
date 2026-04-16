@@ -17,7 +17,7 @@ export const Details = () => {
   useEffect(()=>{
     const fetchNote=async()=>{
       try{
-        const res =await axios.get(`http://localhost:3000/api/node/${id}`);
+        const res =await axios.get(`/api/node/${id}`);
         setnote(res.data);
       }
       catch(error){
@@ -35,7 +35,7 @@ export const Details = () => {
     if(!window.confirm("Sure want to delete the Note?")) return;
 
     try{
-      await axios.delete(`http://localhost:3000/api/node/${id}`);
+      await axios.delete(`/api/node/${id}`);
       toast.success("Note Deleted Successfully");
       navigate("/");
     }
@@ -54,7 +54,7 @@ export const Details = () => {
     setsaving(true);
 
     try {
-      await axios.put(`http://localhost:3000/api/node/${id}`, note);
+      await axios.put(`/api/node/${id}`, note);
       toast.success("Note updated successfully");
       navigate("/"); 
     } catch (error) {

@@ -17,7 +17,7 @@ export const Home = () => {
     useEffect(()=>{
         const fetchNotes=async()=>{
             try{
-                const res=await axios.get("http://localhost:3000/api/node");
+                const res=await axios.get("/api/node");
                 console.log(res.data);
                 setNote(res.data);
                setisRateLimite(false);

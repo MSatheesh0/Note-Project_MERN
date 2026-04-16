@@ -13,7 +13,7 @@ const NoteCard = ({ note ,setNote}) => {
       return;
 
     try{
-      await axios.delete(`http://localhost:3000/api/node/${id}`);
+      await axios.delete(`/api/node/${id}`);
       setNote((pre)=>pre.filter(note=>note._id!==id));
        toast.success("Note Deleted Scuccessfully");
     }
